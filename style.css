@@ -1,83 +1,83 @@
 header{
-display: flex;
-flex-direction: row;
-gap: 2%;
-flex-wrap: nowrap;
-justify-content: flex-start;
+    display: flex;
+    flex-direction: row;
+    gap: 2%;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
 }
 
 body{
-display: flex;
-flex-direction:column;
-align-items: center;
+    display: flex;
+    flex-direction:column;
+    align-items: center;
 }
 
 h5{
-color: white;
-background-color: black;
-padding-top:10px;
-padding-bottom:10px;
+    color: white;
+    background-color: black;
+    padding-top:10px;
+    padding-bottom:10px;
 }
 
 h6{
-background-color: dodgerblue;
-padding-top:20px;
-padding-bottom:20px;
-margin-top:20px;
+    background-color: dodgerblue;
+    padding-top:20px;
+    padding-bottom:20px;
+    margin-top:20px;
 }
 
 main{
-display: flex;
-flex-direction: column;
-flex-wrap: nowrap;
-justify-content: flex-start;
-max-width: 50%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    max-width: 50%;
 }
 
 h1{
-color: white;
-background-color: black;
+    color: white;
+    background-color: black;
 }
 
 img{
-border: 2px solid black;
-max-width: 300px;
+    border: 2px solid black;
+    max-width: 300px;
 }
 
 .kreatin{
-display: flex;
-flex-direction:column;
-align-items: center;
+    display: flex;
+    flex-direction:column;
+    align-items: center;
 }
 
 .chokladprotein{
-display: flex;
-flex-direction:column;
-align-items: center;
+    display: flex;
+    flex-direction:column;
+    align-items: center;
 }
 
 .kreatin3{
-display: flex;
-flex-direction:column;
-align-items: center;
+    display: flex;
+    flex-direction:column;
+    align-items: center;
 }
 
 .protein4{
-display: flex;
-flex-direction:column;
-align-items: center;
+    display: flex;
+    flex-direction:column;
+    align-items: center;
 }
 
 .bälte{
-display: flex;
-flex-direction:column;
-align-items: center;
+    display: flex;
+    flex-direction:column;
+    align-items: center;
 }
 
 .handskar{
-display: flex;
-flex-direction:column;
-align-items: center;
+    display: flex;
+    flex-direction:column;
+    align-items: center;
 }
 
 
@@ -92,7 +92,7 @@ align-items: center;
     header {
         display: flex;
         flex-direction: row;
-        gap: 75px;
+        gap: 68px;
     }
 
     main {
@@ -144,5 +144,81 @@ align-items: center;
         grid-column: 2/3;
         grid-row: 1/2;
         margin-left: 400px;
+    }
+}
+
+/* Desktop */
+@media only screen and (min-width: 1008px){
+    body {
+        display: grid;
+        grid-template-columns: 33% 33% 33%;
+        grid-template-rows: 10% 1fr; 
+    }
+
+    header {
+        display: flex;
+        flex-direction: row;
+        gap: 180px;
+    }
+
+    main {
+        display: grid;
+        grid-template-columns: 50% 50%;
+        grid-template-rows: 1fr; 
+        grid-column: 1/3;
+        grid-row: 2/3; 
+        
+    }
+
+    h5 {
+        color: white;
+        background-color: black;
+        padding: 10px 20px;
+    }
+
+    h6 {
+        background-color: dodgerblue;
+        padding: 20px;
+        margin-top: 20px;
+    }
+
+    h1 {
+        color: white;
+        background-color: black;
+    }
+
+    img {
+        border: 2px solid black;
+        max-width: 300px;
+    }
+    
+    .kreatin{
+        margin-left: 160px;
+    }
+
+    .chokladprotein{
+        margin-left: 420px;
+    }
+
+    .kreatin3{
+        margin-left: 530px;
+    }
+
+
+    .protein4, .bälte, .handskar {
+        grid-row: 2/2;
+    }
+
+    .protein4{
+        margin-left: 160px;
+        margin-top: 15px;
+    }
+
+    .bälte{
+        margin-left: 420px;
+    }
+
+    .handskar{
+        margin-left: 530px;
     }
 }
