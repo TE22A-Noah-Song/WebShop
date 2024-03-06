@@ -38,3 +38,10 @@ function stängVarukorg()
         var modal = document.getElementById("varukorg-modal");
         modal.style.display = "none"; // Göm varukorg-modalen
     }
+
+function återställVarukorg() 
+    {    
+        varukorg = [];
+        visaVarukorg();
+    }
+    
