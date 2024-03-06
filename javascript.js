@@ -51,10 +51,10 @@ function sparaVarukorgILocalStorage() {
 // Ladda varukorgen från localStorage när sidan laddas
 function laddaVarukorgFrånLocalStorage() {
     const varukorgJSON = localStorage.getItem('varukorg'); // Hämta varukorgen från localStorage
-    if (varukorgJSON) {
-        varukorg = JSON.parse(varukorgJSON); // Konvertera JSON-strängen tillbaka till en JS-array
-        visaVarukorg(); // Visa varukorgen på sidan
-    }
+        if (varukorgJSON) {
+            varukorg = JSON.parse(varukorgJSON); // Konvertera JSON-strängen tillbaka till en JS-array
+            visaVarukorg(); // Visa varukorgen på sidan
+        }
 }
 
 // Anropa funktionen för att ladda varukorgen från localStorage när sidan laddas
