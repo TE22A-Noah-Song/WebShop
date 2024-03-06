@@ -16,15 +16,15 @@ function visaVarukorg()
 
         // Loopa igenom varukorgen och skapa text för varje produkt
         var totalSumma = 0;
-        for (var i = 0; i < varukorg.length; i++) {
-            var produkt = varukorg[i];
-            var listItem = document.createElement("li");
-            listItem.textContent = produkt.namn + " - " + produkt.pris + " KR";
-            varukorgLista.appendChild(listItem);
+            for (var i = 0; i < varukorg.length; i++) {
+                var produkt = varukorg[i];
+                var listItem = document.createElement("li");
+                listItem.textContent = produkt.namn + " - " + produkt.pris + " KR";
+                varukorgLista.appendChild(listItem);
 
-            //Räkna ihop summan av alla produkter i varukorgen
-            totalSumma += produkt.pris;
-        }
+                //Räkna ihop summan av alla produkter i varukorgen
+                totalSumma += produkt.pris;
+            }
 
         var totalSummaElement = document.createElement("li");
         totalSummaElement.textContent = "Totalt: " + totalSumma + " KR";
